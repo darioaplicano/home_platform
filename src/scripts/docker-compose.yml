@@ -1,0 +1,12 @@
+# Author: AIOps
+# Description: Docker compose para la creación del contenedor de servidor home aiops
+
+version: '3'
+services:
+  aiops_home:
+    build: ./
+    ports:
+      - "9090:8080"
+    hostname: aiops_home
+    container_name: aiops_home
+    restart: always
